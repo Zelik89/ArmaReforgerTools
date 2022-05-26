@@ -1,3 +1,13 @@
+Installation:  
+Place ArmaReforgerTextures.jsx into Photoshop Scripts folder  
+Default Location: "C:\Program Files\Adobe\Adobe Photoshop CC **\Presets\Scripts"  
+Example: "C:\Program Files\Adobe\Adobe Photoshop CC 2019\Presets\Scripts"  
+
+Usage:  
+Open Photoshop.  
+Navigate to File>Scripts>ArmaReforgerTextures.
+Choose Texuture type on dialog (BCR, NMO or NHO).  
+Choose Directory containing original texutres.  
 
 
 Texture formats:  
@@ -19,7 +29,7 @@ Append "_" and texture type to your original name.
 Examples:  
   Name: Trampled Beach Sand  
   Format: tga  
-	Trampled Beach Sand_Albedo.tga  
+  Trampled Beach Sand_Albedo.tga  
   Trampled Beach Sand_AO.tga  
   Trampled Beach Sand_Height.tga  
   Trampled Beach Sand_Metallic.tga  
