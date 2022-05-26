@@ -35,7 +35,7 @@ Input:
 
 Output:  
  Files are output to a subfolder of the original location.  
- Original Location: "C:\Textures\"
+ Original Location: "C:\Textures\"  
  Output Folder: "C:\Textures\converted"
  
 Examples:  
