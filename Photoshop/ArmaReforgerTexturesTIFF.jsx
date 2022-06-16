@@ -5,22 +5,23 @@ app.bringToFront();
 var Black = new SolidColor();
 Black.rgb["hexValue"] = '000000';
 
+function startScript()
+{
+	var dialog = new Window("dialog", "", undefined, {resizeable: true} );
+	dialog.text = "Arma Reforger Texture Tool";
+	dialog.orientation = "row";
+	dialog.alignChildren = ["fill", "fill"];
+	dialog.spacing = 0;
+	dialog.margins = 2;
 
-var dialog = new Window("dialog", "", undefined, {resizeable: true} );
-dialog.text = "Arma Reforger Texture Tool";
-dialog.orientation = "row";
-dialog.alignChildren = ["fill", "fill"];
-dialog.spacing = 0;
-dialog.margins = 2;
+	var BCR_Button = dialog.add("button", undefined, undefined, { name: "BCR" });
+	BCR_Button.text = "BCR";
+	
+	var NMO_Button = dialog.add("button", undefined, undefined, { name: "NMO" });
+	NMO_Button.text = "NMO";
 
-var BCR_Button = dialog.add("button", undefined, undefined, { name: "BCR" });
-BCR_Button.text = "BCR";
-
-var NMO_Button = dialog.add("button", undefined, undefined, { name: "NMO" });
-NMO_Button.text = "NMO";
-
-var NHO_Button = dialog.add("button", undefined, undefined, { name: "NHO" });
-NHO_Button.text = "NHO";
+	var NHO_Button = dialog.add("button", undefined, undefined, { name: "NHO" });
+	NHO_Button.text = "NHO";
 
 BCR_Button.onClick = function() 
 {
@@ -373,3 +374,40 @@ function saveTarga32(doc){
 dialog.onResizing = function() { this.layout.resize(); }
 
 dialog.show();
+};
+startScript();
+
+app.bringToFront();
+
+function runAgain()
+{
+	var dialog = new Window("dialog", "", undefined, {resizeable: true} );
+	dialog.text = "Run Again?";
+	dialog.orientation = "row";
+	dialog.alignChildren = ["fill", "fill"];
+	dialog.spacing = 0;
+	dialog.margins = 2;
+
+	var Yes_Button = dialog.add("button", undefined, undefined, { name: "Yes" });
+	Yes_Button.text = "Yes";
+
+	var No_Button = dialog.add("button", undefined, undefined, { name: "No" });
+	No_Button.text = "No";
+
+	Yes_Button.onClick = function() 
+	{
+		startScript();
+		//dialog.hide();
+	};
+
+	No_Button.onClick = function()
+	{
+	
+		dialog.hide();
+	};
+
+	dialog.onResizing = function() { this.layout.resize(); }
+
+	dialog.show();
+};
+runAgain();	
