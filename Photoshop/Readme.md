@@ -10,8 +10,7 @@ Choose Texuture type on dialog (BCR, NMO or NHO).
 Choose Directory containing original texutres.  
 
 
-Texture formats:  
-*.png  
+Texture formats: 
 *.tga
 
 Required Textures:  
