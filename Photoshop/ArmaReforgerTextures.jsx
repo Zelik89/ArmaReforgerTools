@@ -28,7 +28,7 @@ var selectedFolder = Folder.selectDialog("Please select folder");
 
 	if(selectedFolder != null)
 	{
-		var fileList = selectedFolder.getFiles(/\.(tga|png)$/i); 
+		var fileList = selectedFolder.getFiles(/\.(tga)$/i); 
 	}
 
 	for(var a = 0 ;a < fileList.length; a++)
@@ -54,7 +54,7 @@ var selectedFolder = Folder.selectDialog("Please select folder");
 
 	if(selectedFolder != null)
 	{
-		var fileList = selectedFolder.getFiles(/\.(tga|png)$/i); 
+		var fileList = selectedFolder.getFiles(/\.(tga)$/i); 
 	}
 
 	for(var a = 0 ;a < fileList.length; a++)
@@ -88,7 +88,7 @@ var selectedFolder = Folder.selectDialog("Please select folder");
 
 	if(selectedFolder != null)
 	{
-		var fileList = selectedFolder.getFiles(/\.(tga|png)$/i); 
+		var fileList = selectedFolder.getFiles(/\.(tga)$/i); 
 	}
 
 	for(var a = 0 ;a < fileList.length; a++)
